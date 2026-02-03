@@ -73,6 +73,10 @@ public class Recursion{
         int slast = fibonacci(n-2);
         return last + slast;
     }
+    //print the subsequence
+    static void Subseq(int ind , ArrayList<Integer> ds, int[] arr , int n){
+
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt() ;
@@ -98,6 +102,10 @@ public class Recursion{
          boolean p = isPalindrome(0, x.length(), x);
          System.out.println(p);
          System.out.println(fibonacci(5));
+         int v= 3;
+         int[] a = {3, 2,1};
+         ArrayList<Integer> ds = new ArrayList<>();
+         Subseq(0,ds,arr,n);
          sc.close();
     }
     
