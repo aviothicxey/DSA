@@ -26,6 +26,13 @@ public class recursion_prac {
     }
 
     static int rev2(int n){
+        int digits = (int)(Math.log10(n))+10;
+        return helper(n,digits);
+    }
+    private static int helper(int n , int arg){
+        if(n % 10 == n){
+            return n;
+        }
         
     }
     public static void main(String args[]){
