@@ -37,8 +37,12 @@ public class recursion_prac {
         return rem *(int)(Math.pow(10,arg-1)) + helper(n/10 , arg-1);
     }
 
+    static boolean isPalindrome(int n){
+        return n == rev2(n);
+    }
 
-    
+
+
     public static void main(String args[]){
        // fun(5);
     //    int ans = sumOfDigits(123456);
@@ -51,5 +55,6 @@ public class recursion_prac {
     // System.out.println(sum);
 
     // System.out.println(rev2(1234));
+    System.out.println(isPalindrome(6665666));
     }
 }

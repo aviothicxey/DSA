@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rec_countZeros",
+            "request": "launch",
+            "mainClass": "rec_countZeros",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
             "name": "recursion_prac",
             "request": "launch",
             "mainClass": "recursion_prac",
