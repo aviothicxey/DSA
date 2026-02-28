@@ -12,7 +12,7 @@ public class recursion_prac {
     }
 
     static int productOfDigits(int n){
-        if( n == 0) return 1;
+        if(n% 10 == n) return n;
         return n% 10 * productOfDigits(n/10);
     }
 
@@ -26,15 +26,19 @@ public class recursion_prac {
     }
 
     static int rev2(int n){
-        int digits = (int)(Math.log10(n))+10;
+        int digits = (int)(Math.log10(n))+1;
         return helper(n,digits);
     }
     private static int helper(int n , int arg){
         if(n % 10 == n){
             return n;
         }
-        
+        int rem = n % 10;
+        return rem *(int)(Math.pow(10,arg-1)) + helper(n/10 , arg-1);
     }
+
+
+    
     public static void main(String args[]){
        // fun(5);
     //    int ans = sumOfDigits(123456);
@@ -43,7 +47,9 @@ public class recursion_prac {
     // int ans = productOfDigits(5055);
     // System.out.println(ans);
 
-    rev1(1234);
-    System.out.println(sum);
+    // rev1(1234);
+    // System.out.println(sum);
+
+    // System.out.println(rev2(1234));
     }
 }
