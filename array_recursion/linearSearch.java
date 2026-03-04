@@ -12,8 +12,10 @@ public class linearSearch {
         // int fromLast = findIndexFromLast(arr, 13, arr.length-1);
         // System.out.println(fromLast);
 
-        find(arr,13,0);
-        System.out.println(ans);
+        // find(arr,13,0);
+        // System.out.println(ans);
+
+        System.out.println(findAllIndex(arr, 13, 0, new ArrayList<>()));
 
     }
     static int findIndex(int[]arr,int target,int ind){
@@ -36,6 +38,13 @@ public class linearSearch {
         if(ind == arr.length-1) return;
         if(arr[ind] == tar) ans.add(ind);
         find(arr, tar, ind+1);
+
+    }
+    static ArrayList<Integer> findAllIndex(int[]arr,int target, int index,ArrayList<Integer> list){
+        if(index == arr.length) return list;
+        if (arr[index] == target) list.add(index);
+
+        return findAllIndex(arr, target, index + 1, list);
 
     }
 }
