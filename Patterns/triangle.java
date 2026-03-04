@@ -4,6 +4,7 @@ public class triangle {
     public static void main(String[]args){
         int n = 4;
         print(n, 0);
+        print2(n, 0);
     }
     static void print(int r , int c){
         if(r <= 0) return;
@@ -13,6 +14,16 @@ public class triangle {
         }else{
             System.out.println();
             print(r-1 , 0);
+        }
+    }
+    static void print2(int r, int c){
+        if(r<= 0) return;
+        if(r > c) {
+            print2(r, c+1);
+            System.out.print("*");
+        }else{
+            print2(r-1, 0);
+            System.out.println();
         }
     }
 }
