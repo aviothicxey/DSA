@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "triangle",
+            "request": "launch",
+            "mainClass": "Patterns.triangle",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
             "name": "rbs",
             "request": "launch",
             "mainClass": "array_recursion.rbs",
