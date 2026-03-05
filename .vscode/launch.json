@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Stream",
+            "request": "launch",
+            "mainClass": "rec_Strings.Stream",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Patterns.BubbleSort",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
             "name": "triangle",
             "request": "launch",
             "mainClass": "Patterns.triangle",
