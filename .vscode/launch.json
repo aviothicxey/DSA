@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "towerOfHanoi",
+            "request": "launch",
+            "mainClass": "towerOfHanoi",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
+            "name": "bitfFips",
+            "request": "launch",
+            "mainClass": "bit_manipulation.bitfFips",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
+            "name": "tricks",
+            "request": "launch",
+            "mainClass": "bit_manipulation.tricks",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
+            "name": "D2B",
+            "request": "launch",
+            "mainClass": "D2B",
+            "projectName": "c-plus-plus_22fb0699"
+        },
+        {
+            "type": "java",
             "name": "FinallyExample",
             "request": "launch",
             "mainClass": "FinallyExample",
