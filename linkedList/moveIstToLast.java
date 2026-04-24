@@ -1,6 +1,6 @@
 
 public class moveIstToLast{
-    public Node moveIstToLast(Node head){
+    public static Node moveIstToLast(Node head){
      if(head == null || head.next == null) return head;
         Node temp = head ;
         Node tail = head;
@@ -15,5 +15,8 @@ public class moveIstToLast{
         temp.next = null;
         
         return head;
+    }
+    public static void main(String[] args){
+        System.out.println(moveIstToLast(null));
     }
 }
