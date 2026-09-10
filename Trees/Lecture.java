@@ -11,7 +11,7 @@ public class Lecture {
             right = null;
         }
         public static void main(String[] args){
-            Node obj = new Node();
+           // Node obj = new Node();
         }
     }
 }

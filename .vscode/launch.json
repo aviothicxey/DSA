@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "d26",
+            "request": "launch",
+            "mainClass": "Class_5thSem.d26",
+            "projectName": "c-plus-plus_f1d500b5"
+        },
+        {
+            "type": "java",
             "name": "towerOfHanoi",
             "request": "launch",
             "mainClass": "towerOfHanoi",
