@@ -38,6 +38,16 @@ public static void main(String[]args){
         System.out.print(maxi);
     }
 */
+/* 
+//Q4. Find the sum of all numbers:
+public static void main(String[]args){
+        List<Integer> list = Arrays.asList(10,60,50,70,20,90,80,30);
+        int sum = list.stream()
+        .reduce(0 , (a,b)-> a+b);
 
-//Q4. 
+        System.out.print(sum);
+
+    }
+*/
+
 }
