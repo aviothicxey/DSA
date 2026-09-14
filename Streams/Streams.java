@@ -7,7 +7,7 @@ public class Streams {
 /*
 // Q1. Filter even numbers and find their squares
 
-  public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> list = Arrays.asList(1,2,3,4,5,6);
 
         List<Integer> res = list.stream()
@@ -30,7 +30,7 @@ public class Streams {
 */
 /* 
 //Q3. Find maximum number using stream
-public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> list = Arrays.asList(10,60,50,70,20,90,80,30);
         int maxi = list.stream()
         .max(Integer::compareTo)
@@ -40,7 +40,7 @@ public static void main(String[]args){
 */
 /* 
 //Q4. Find the sum of all numbers:
-public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> list = Arrays.asList(10,60,50,70,20,90,80,30);
         int sum = list.stream()
         .reduce(0 , (a,b)-> a+b);
@@ -51,7 +51,7 @@ public static void main(String[]args){
 */
 /* 
 // Q5 . count numbers divisible by 3:
-public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> list = Arrays.asList(10,60,50,70,20,90,80,30);
         long cnt = list.stream()
         .filter(x -> x % 3 == 0)
@@ -61,7 +61,7 @@ public static void main(String[]args){
 */
 /*
 //Q6. remove duplicate elements:
-public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> list = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 5);
         List<Integer> ans = list.stream()
         .distinct()
@@ -71,7 +71,7 @@ public static void main(String[]args){
 */
 /* 
 // Q7 : sort string by length:
-public static void main(String[]args){
+    public static void main(String[]args){
         List<String> names = Arrays.asList("Apple", "Hi", "Banana", "Cat", "Programming");
         List<String> ans = names.stream()
         .sorted(Comparator.comparingInt(String::length))
@@ -79,9 +79,9 @@ public static void main(String[]args){
         System.out.println(ans);
     }
 */
-
+/* 
 //Q8 : Find the second largest number
-public static void main(String[]args){
+    public static void main(String[]args){
         List<Integer> nums = Arrays.asList(10, 20, 40, 30, 40, 50);
         int s_largest = nums.stream()
         .distinct()
@@ -92,4 +92,24 @@ public static void main(String[]args){
 
         System.out.println(s_largest);
     }
+*/
+/* 
+//Q9. fins all names starting with a:
+    public static void main(String[]args){
+        List<String> names = Arrays.asList("Ayush", "Aparna", "Himanshi", "Tanisha", "Shriya");
+        names.stream()
+        .filter(x -> x.startsWith("A"))
+        .forEach(System.out::println);
+    }
+*/
+/* 
+//Q10. Convert all strings to uppercase
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Ayush", "Aparna", "Himanshi", "Tanisha", "Shriya");
+        List<String> ans = names.stream()
+        .map(String::toUpperCase)
+        .toList();
+        System.out.println(ans);
+    }
+*/
 }
