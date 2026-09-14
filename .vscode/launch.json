@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Streams",
+            "request": "launch",
+            "mainClass": "Streams.Streams",
+            "projectName": "c-plus-plus_f1d500b5"
+        },
+        {
+            "type": "java",
+            "name": "Streams",
+            "request": "launch",
+            "mainClass": "streams.Streams",
+            "projectName": "c-plus-plus_f1d500b5"
+        },
+        {
+            "type": "java",
             "name": "practice",
             "request": "launch",
             "mainClass": "java.practice",
