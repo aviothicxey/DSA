@@ -49,5 +49,24 @@ public static void main(String[]args){
 
     }
 */
-
+/* 
+// Q5 . count numbers divisible by 3:
+public static void main(String[]args){
+        List<Integer> list = Arrays.asList(10,60,50,70,20,90,80,30);
+        long cnt = list.stream()
+        .filter(x -> x % 3 == 0)
+        .count();
+        System.out.println(cnt);
+    }
+*/
+/*
+//Q6. remove duplicate elements:
+public static void main(String[]args){
+        List<Integer> list = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 5);
+        List<Integer> ans = list.stream()
+        .distinct()
+        .toList();
+        System.out.println(ans);
+    }
+*/
 }
