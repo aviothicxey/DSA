@@ -69,4 +69,27 @@ public static void main(String[]args){
         System.out.println(ans);
     }
 */
+/* 
+// Q7 : sort string by length:
+public static void main(String[]args){
+        List<String> names = Arrays.asList("Apple", "Hi", "Banana", "Cat", "Programming");
+        List<String> ans = names.stream()
+        .sorted(Comparator.comparingInt(String::length))
+        .toList();
+        System.out.println(ans);
+    }
+*/
+
+//Q8 : Find the second largest number
+public static void main(String[]args){
+        List<Integer> nums = Arrays.asList(10, 20, 40, 30, 40, 50);
+        int s_largest = nums.stream()
+        .distinct()
+        .sorted(Comparator.reverseOrder())
+        .skip(1)
+        .findFirst()
+        .get();
+
+        System.out.println(s_largest);
+    }
 }
