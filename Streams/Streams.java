@@ -112,4 +112,41 @@ public class Streams {
         System.out.println(ans);
     }
 */
+/*
+//Q11. Find frequency of each word
+    public static void main(String[] args) {
+        List<String> words = Arrays.asList("java", "python", "java","c++", "python", "java");
+        Map<String,Long> freq = words.stream()
+        .collect(Collectors.groupingBy(
+            x -> x,
+            Collectors.counting()
+        ));
+        System.out.println(freq);
+    }
+*/
+/* 
+// Q12. find freq of characters in a string
+    public static void main(String[] args) {
+        String s = "banana";
+        Map<Character , Long> map = s.chars()
+        .mapToObj(c -> (char) c)
+        .collect(Collectors.groupingBy(
+            c -> c,
+            Collectors.counting()
+        ));
+        System.out.println(map);
+    }
+*/
+/*
+//Q13. find duplicate elements:
+    public static void main(String[] args) {
+        List<Integer> nums = Arrays.asList(1, 2, 3, 2, 4, 5, 3, 6);
+        Set<Integer> set = new HashSet<>();
+        nums.stream()
+        .filter(n-> !set.add(n))
+        .forEach(System.out::println);
+    }
+*/
+
+//Q14 : 
 }
