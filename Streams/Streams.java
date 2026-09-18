@@ -147,6 +147,34 @@ public class Streams {
         .forEach(System.out::println);
     }
 */
+/*
+//Q14 : find first non repeated character:
+    public static void main(String[] args) {
+       String s = "swiss";
+        Map<Character, Long> map = s.chars()
+        .mapToObj(c -> (char)c)
+        .collect(Collectors.groupingBy(
+            c-> c,
+            Collectors.counting()
+        ));
+        Character res = map.entrySet()
+        .stream()
+        .filter(x -> x.getValue() == 1)
+        .map(Map.Entry::getKey)
+        .findFirst()
+        .orElse(null);
 
-//Q14 : 
+        System.out.println(res);
+    }
+*/
+/* */
+//Q15. create your own functional interface:
+    @FunctionalInterface 
+    interface Square{
+        int calculate(int n);
+    }
+    public static void main(String[] args) {
+        Square s = n -> n*n;
+        System.out.println(s.calculate(5)); 
+    }
 }
